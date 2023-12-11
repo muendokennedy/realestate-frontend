@@ -1,7 +1,4 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.3.6"
-  },
   "name": "real-estate-frontend",
   "version": "1.0.0",
   "description": "An application for real estate properties",
