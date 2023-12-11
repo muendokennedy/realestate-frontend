@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  },
+  "name": "real-estate-frontend",
+  "version": "1.0.0",
+  "description": "An application for real estate properties",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch"
+  },
+  "author": "Kennedy Muendo",
+  "license": "ISC"
+}
