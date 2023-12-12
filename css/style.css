@@ -155,3 +155,55 @@ nav .links:hover{
   width: 15rem;
   margin: 2rem 0;
 }
+/* The footer styling */
+footer{
+  font-size: 1.4rem;
+  background: var(--footer-background-color);
+  padding: 4rem 5%;
+  margin: 5rem 0 0 0;
+}
+footer .footer-info-box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+footer .link-box a{
+  margin: 1.5rem 0;
+  transition: all .3s ease-in-out;
+}
+footer .link-box a:hover{
+  color: var(--primary);
+}
+footer .link-box a{
+  display: block;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  padding: .5rem 0;
+}
+footer .footer-box-title{
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+footer p{
+  padding: 1.5rem 0;
+}
+footer .social-media-icons{
+  color: var(--primary-text-color);
+  display: flex;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+footer .social-media-icons i{
+  font-size: 1.6rem;
+  transition: all .3s ease-in-out;
+}
+footer .social-media-icons i:hover{
+  color: var(--primary);
+}
+footer .copyright-box{
+  text-align: center;
+  padding: 6rem 0 0 0;
+}
+footer .copyright-box span{
+  color: var(--primary);
+}
