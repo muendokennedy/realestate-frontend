@@ -55,11 +55,6 @@ header{
   align-items: center;
   z-index: 100;
 }
-header .logo-area{
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-}
 header .logo-area .nav-logo{
   height: 3rem;
   width: 3rem;
@@ -68,6 +63,11 @@ header .logo-area .nav-title{
   font-weight: 500;
   font-size: 1.8rem;
   text-transform: capitalize;
+}
+header .logo-area{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
 }
 header .logo-area .nav-logo img{
   height: 100%;
@@ -105,15 +105,14 @@ nav .link-container:hover > .links{
 nav .links:hover{
   display: block;
 }
-/* The home page styling */
 .home .home-title{
   font-size: 1.8rem;
   padding: 2rem 0;
   font-weight: 600;
 }
 .home .welcome-section{
-  display: flex;
   align-items: center;
+  display: flex;
   width: 100%;
   justify-content: space-between;
 }
@@ -154,6 +153,239 @@ nav .links:hover{
 .home .home-property-box .property-box .property-details a{
   width: 15rem;
   margin: 2rem 0;
+}
+/* The urban page */
+.urban .urban-title{
+  font-size: 1.8rem;
+  padding: 2rem 0;
+  font-weight: 600;
+  border-bottom: .1rem solid #000;
+  width: 20rem;
+}
+.urban .urban-welcome-text{
+  margin: 2rem 0;
+}
+.urban .urban-title span{
+  color: var(--primary);
+}
+table{
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: collapse;
+}
+th{
+  padding: 1.5rem 1.6rem;
+  background: var(--primary);
+  text-align: left;
+  border-top: .1rem solid #000;
+  border-bottom: .1rem solid #000;
+}
+td{
+  padding: 1.5rem 1.6rem;
+}
+.urban .call-to-action{
+  font-size: 1.8rem;
+  padding: 2rem 0;
+  font-weight: 600;
+}
+.urban .btn{
+  margin: 3rem 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 30rem;
+}
+/* The styling of the contact page */
+.contact .contact-title{
+  font-size: 1.8rem;
+  padding: 2rem 0;
+  font-weight: 600;
+  border-bottom: .1rem solid #000;
+  width: 20rem;
+}
+.contact .contact-title span{
+  color: var(--primary);
+}
+.contact .contact-welcome-text{
+  margin: 2rem 0;
+}
+.contact .contact-form-title{
+  font-size: 1.8rem;
+  padding: 2rem 0;
+  font-weight: 600;
+}
+.contact .contact-form{
+  background: var(--contact-form-background-color);
+  padding: 2rem 2%;
+}
+.contact .contact-form .form-row{
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+.contact .contact-form .form-row .form-input{
+  width: 45%;
+  position: relative;
+}
+.contact .contact-form .form-row .form-input input,
+.contact .contact-form .form-row .form-input select{
+  padding: 1rem 0;
+  border: none;
+  outline: none;
+  border-bottom: .2rem solid var(--form-input-border-bottom-color);
+  background: none;
+  width: 100%;
+}
+.contact .contact-form .form-row .form-input label{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.contact .contact-form .form-row .form-input input:focus ~ label,
+.contact .contact-form .form-row .form-input input:valid ~ label,
+.contact .contact-form .form-row .form-input select:focus ~ label,
+.contact .contact-form .form-row .form-input select:valid ~ label{
+  transform: translateY(-3rem);
+  transition: all .3s ease-in-out;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+.contact .contact-form .form-row .form-input input[type="file"]:focus ~ label,
+.contact .contact-form .form-row .form-input input[type="file"]:valid ~ label{
+  transform: translateY(-4rem);
+}
+.contact .contact-form .form-row .form-input input[type="date"] ~ label{
+  position: absolute;
+  z-index: 10;
+  background: var(--contact-form-background-color);
+  padding: .2rem 0;
+}
+.contact .contact-form .form-row .form-input input[type="file"] ~ label{
+  position: absolute;
+  z-index: 10;
+  background: var(--contact-form-background-color);
+  padding: .3rem 10rem 0 0;
+}
+.contact .contact-form .form-row .textarea{
+  width: 100%;
+}
+.contact .contact-form .form-row .textarea textarea{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: .2rem solid var(--form-input-border-bottom-color);
+  background: none;
+  resize: none;
+}
+.contact .contact-form .form-row .textarea label{
+  bottom: 90%;
+}
+.contact .contact-form .form-row .textarea textarea:focus ~ label,
+.contact .contact-form .form-row .textarea textarea:valid ~ label{
+  transform: translateY(-7rem);
+  transition: all .3s ease-in-out;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+.contact .contact-form .form-row .form-input input:focus,
+.contact .contact-form .form-row .textarea textarea:focus{
+  border-bottom-color: var(--primary);
+}
+.contact .submit-btn .btn{
+  width: 20rem;
+  font-weight: 600;
+}
+.map .map-title{
+  font-size: 1.8rem;
+  padding: 2rem 0;
+  font-weight: 600;
+}
+.map .map-title span{
+  color: var(--primary);
+}
+.map iframe{
+  width: 100%;
+  height: 50rem;
+  margin: 2rem 0 4rem 0;
+}
+.contact .contact-form-title span{
+  color: var(--primary);
+}
+/* The information page styling */
+.information .btn{
+  margin: 2rem 0;
+}
+.information .success-text, .information .error-text{
+  padding: 3rem 4rem;
+  background: #6fffc8;;
+  border-radius: 0 2.8rem 2.8rem 2.8rem;
+  margin: 2rem 0;
+}
+.information .error-text{
+  padding: 2rem 2rem;
+  text-align: center;
+  background-color: #f3a0a0;
+}
+/* Styling of the payment page */
+.payment .payment-welcome-text{
+  margin: 0 0 3rem 0;
+}
+/* Styling of the conditions page */
+.conditions .conditions-title{
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  font-weight: 600;
+  border-bottom: .2rem solid var(--contact-form-background-color);
+  width: 30rem;
+  margin: 2rem 0;
+}
+.conditions .conditions-title span{
+  color: var(--primary);
+}
+.conditions .conditions-box{
+  background: var(--contact-form-background-color);
+  padding: 2rem 2%;
+  margin: 3rem 0;
+}
+.conditions .conditions-box-title{
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  font-weight: 600;
+}
+.conditions .conditions-box .condition{
+  position: relative;
+  padding-left: 3rem;
+  line-height: 2;
+}
+.conditions .conditions-box .condition::before{
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: .8rem;
+  height: .8rem;
+  background: #000;
+  border-radius: 50%;
+}
+.conditions .agree-title{
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  font-weight: 600;
+}
+.conditions form .input-box{
+  display: inline-block;
+  margin-right: 4rem;
+}
+.conditions .btn{
+  margin: 2rem 0;
+  display: block;
+  width: 25rem;
+}
+.payment .payment-block .pay-column{
+  margin-top: 2rem;
 }
 /* The footer styling */
 footer{
