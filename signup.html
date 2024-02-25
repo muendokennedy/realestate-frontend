@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+      <!-- The custom CSS link -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Kenya Real estate system</title>
+</head>
+<body>
+  <!-- This is the navigation bar -->
+  <header>
+    <div class="logo-area">
+      <div class="nav-logo"><img src="IMAGES/kenyan logo.png" alt="Kenyan logo"></div>
+      <div class="nav-title">Kenya real estate system</div>
+    </div>
+    <nav>
+      <a href="index.php">Home</a>
+      <div class="link-container">
+      <a class="drop-down">Land plots <i class="fa-solid fa-caret-down"></i></a>
+      <div class="links">
+        <a href="urban.php">Urban Plots</a>
+        <a href="upcountry.php">Upcountry Plots</a>
+      </div>
+      </div>
+      <div class="link-container">
+      <a class="drop-down">Buildings <i class="fa-solid fa-caret-down"></i></a>
+      <div class="links">
+        <a href="apartments.php">Apartments</a>
+        <a href="houses.php">Houses</a>
+      </div>
+      </div>
+      <a href="contact.php">Contact</a>
+    </nav>
+  </header>
+  <!-- The contact section or page -->
+  <section class="signup">
+    <div class="signup-title">Create <span>account</span></div>
+    <hr>
+    <div class="signup-container">
+      <div class="signup-form">
+        <div class="signup-form-title">sign up</div>
+        <form action="FORM/contact.php" method="POST">
+            <div class="form-input">
+              <input type="text" name="name" id="name" required>
+              <label for="name">Enter your name:</label>
+            </div>
+            <div class="form-input">
+              <input type="text" name="email" id="email" required>
+              <label for="email">Enter email:</label>
+            </div>
+            <div class="form-input">
+              <input type="password" name="password" id="password" required>
+              <label for="password">Enter your password:</label>
+            </div>
+            <div class="form-input">
+              <input type="password" name="password_confirmation" id="password_confirmation" required>
+              <label for="password_confirmation">Confirm your password:</label>
+            </div>
+            <div class="submit-btn">
+              <button type="submit" class="btn">Send</button>
+            </div>
+          </form>
+          <p class="account-already">Already have an account?<a href="#">login in here</a></p>
+        </div>
+    </div>
+  </section>
+  <!-- The footer section -->
+  <footer>
+    <div class="footer-info-box">
+    <div class="link-box">
+        <p class="footer-box-title">Main Links</p>
+        <a href="index.php">Home</a>
+        <a href="urban.php">Urban Plots</a>
+        <a href="apartments.php">Residential Apartments</a>
+        <a href="upcountry.php">Upcountry Plots</a>
+        <a href="houses.php">Houses</a>
+      </div>
+      <div class="link-box">
+        <p class="footer-box-title">Social media links</p>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+      </div>
+      <div class="link-box">
+        <p class="footer-box-title">Our offices</p>
+        <a href="#">Nairobi</a>
+        <a href="#">Mombasa</a>
+        <a href="#">Nakuru</a>
+        <a href="#">Kisumu</a>
+      </div>
+      <div class="link-box">
+        <p class="footer-box-title">Our mission</p>
+        <p>To ensure that fraud surrounding acquisition of real estate properties is reduced</p>
+        <hr>
+        <div class="social-media-icons">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="copyright-box">This is the offficial site of <span>Kenya real estate inventory system</span>| kenyarealestate@gmail.com | All Rights Reserved</div>
+  </footer>
+</body>
+</html>
